@@ -1,0 +1,114 @@
+<div class='forma1'>
+<form id="delevery" name="delevery" class="delevery">
+<div class='block-form'>
+<div class='delevery-order' >
+<div class="block-name_ms1"><span class="sf-font-m-p"><strong>Укажите размер и количество пиявок:</strong></span><br><span class="sf-font-s-sub">(если Вы сомневаетесь в выборе размера, укажите общее количество)</span></div>
+<div class='form-group'>
+
+<label class="label-checkbox"><input type="checkbox" id="check1" name="kosmeticheskaya" value="on"><span class="check_round"></span><span id='kosm'>Косметическая (0,2-0,5г)</span></label>
+<label class="num"><input type="number" id="input1" name="kosm" min="1" value="" disabled='true' class="type-qty"><span class="qty-name">шт.</span></label>
+</div>
+<div class='form-group'>
+<label class="label-checkbox"><input type="checkbox" id="check2" name="melkaya" value="on"><span class="check_round"></span><span id='melk'>Мелкая (0,6-0,9г)</span></label>
+<label class="num"><input type="number" id="input2"  min="1" value="" disabled='true' class="type-qty" name="melk"><span class="qty-name">шт.</span></label>
+</div>
+<div class='form-group'>
+<label class="label-checkbox"><input type="checkbox" id="check3" name="sredn" value="on"><span class="check_round"></span><span id='sred'>Средняя (0,9-1,5г)</span></label>
+<label class="num"><input type="number" id="input3"  min="1" value="" disabled='true' class="type-qty" name="sr"><span class="qty-name">шт.</span></label>
+</div>
+<div class='form-group'>
+<label class="label-checkbox"><input type="checkbox" id="check4" name="krupn" value="on"><span class="check_round"></span><span id='krup'>Крупная (от 1,5г)</span></label>
+<label class="num"><input type="number" id="input4"  min="1" value="" disabled='true' class="type-qty" name="kr"><span class="qty-name">шт.</span></label>
+</div>
+</div>
+<div class='name_block'>
+<div class='name'>
+<span><strong>Общее количество:</strong></span>
+</div>
+<label class='name1'><input type="number" id="input5"  min="10" value="10"   class='kvadro'  name="obchee"><span class='qty-name'>шт.</span></label><br>
+</div>
+<div class='upakovka'>
+<div class='vibor'>
+<span><strong>Наполнение транспортировочной тары:</strong></span>
+</div>
+<div class='radio1'>
+<label><input type="radio" name='pack' id='voda' value='Вода' checked><span class="check_round"></span> Вода</label>
+<label><input type="radio" name='pack' id='Hidrogel' value='Гидрогель'><span class="check_round"></span> Гидрогель</label>
+<label><input type="radio" name='pack' id='Torf' value='Торф'><span class="check_round"></span> Торф</label><br>
+</div>
+</div>
+<div class='sposob_dostavki'>
+<span><strong>Выберите способ доставки:</strong></span>
+<div class='radio2'>
+<label id='nesam1'><input type="radio" name='delevery' id='Dostavka' value='Доставка по адресу'><span class="check_state"> </span>Доставка по адресу</label>
+<label id='sam1'><input type="radio" name='delevery' id='Samovivoz' value='Самовывоз'><span class="check_state"></span>Самовывоз</label>
+</div>
+<div class='kak'>
+<div id='sam'>
+<strong>Пункт выдачи находится по адресу:</strong>
+<p style="text-align: justify;     max-width: 80%;
+    display: inline-block;">Россия, Московская область, городской округ Люберцы, посёлок городского типа Томилино, улица Гончарова, дом 4</p>
+</div>
+<div id='nesam'>
+<div class='ukaz_adres'>
+<p><strong>Введите адрес доставки:</strong><br> (после расчёта стоимости, наш менеджер свяжется с Вами)</p>
+  </div>
+
+ <label class="label"> <input type="text" id="adres" class="adres"  maxlength="150" value="" name="adres">
+ <span>Кв. №</span><input type="text" id="kv" class="kv_num" maxlength="3" value="" name="kv"></label>
+</div>
+</div>
+</div>
+<div id="eror">
+<span>Не выбран способ доставки.</span>
+</div>
+<div id="eror2">
+<span>Не указан адрес доставки.</span>
+</div>
+<div id="eror3">
+<span>Минимальная сумма заказа при доставке не менее 10шт.</span>
+</div>
+<p><strong>Стоимость пиявок (без учёта стоимости доставки):</strong></p>
+<div class="itog">
+<input type="text" id="output" name="stoimost" min="10" readonly value='800'/><strong>р.</strong>
+</div>
+<div class="sale" ID="sale1">
+<strong>Ваша экономия - </strong><span id="sale1"></span><input type="text" id="sale"  min="0" readonly value='0'/><strong>р.</strong>
+</div>
+<div class='btn'>
+<span class="button24" id='next'>Продолжить</span>
+</div>
+<div id="formModal" class="modal">
+<div class="modalContent">
+<span class="close">×</span>
+<div class="page1" id="page1">
+<div class="modal_content">
+<label class="rovno">Ваше имя:</label><label><input type="text" id="username" maxlength="12" name="user_name" required value="" ></label>
+</div>
+<div class="modal_content">
+<label class="rovno">Телефон:</label><label><input type="tel" id="telefon" class="phone" name="tel" required value="" ></label>
+</div>
+<div class="modal_content">
+<label class="rovno">Email:</label><label><input type="email" id="pochta" maxlength="30" required name="milo"  value="" ></label>
+</div>
+<div class='form-group'>
+<label class="label-checkbox"><input type="checkbox" id="check11" name="soglasie" value="on"><span class="check_round"></span><span id='krup'>Нажимая кнопу "Оформить заказ" <br>Вы даёте согласие на обработку своих персональных данных.</span>
+</div>
+<br>
+<div class="modal_button">
+<label><button type="submit" id="button" value="Оформить заказ"  form="delevery" disabled="true">Оформить заказ</button></label>
+</div>
+<div class="itog">
+<label class="rovno"><hr><span>Итог (без учёта доставки):</span></label><label><div class="itog"><input type="text" id="output2"  value="800" min="10" readonly ><strong>р.</strong></div></label>
+</div>
+</div>
+<div class="page2" id="page2" >
+<span style="
+    font-size: 18pt;
+">Спасибо за заказ!<br> Наш менеджер свяжется с Вами в течении часа. <br> Режим работы : Пн-Пт с 09:30 до 17:00</span>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
